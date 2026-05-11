@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooms | Filipino Hometel</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/rooms.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <a href="index.html" class="logo">
+        <img src="pics/logo.png" alt="Company Logo" />
+        <h1>Filipino Hometel</h1>
+      </a>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Logout</a>
+      </div>
+    </nav>
+
+    <section class="room-details">
+      <div class="room-header">
+        <h1>Our Rooms</h1>
+        <p>Choose the perfect room for your stay</p>
+      </div>
+
+      <div class="room-one">
+        <h2 id="standard">Standard Room</h2>
+        <p>
+          The Standard Room Hut is cozy and welcoming, designed with natural
+          bamboo accents and warm lighting. It’s perfect for travelers who want
+          a simple yet comfortable stay surrounded by a rustic Filipino
+          atmosphere.
+        </p>
+        <img src="pics/standard.png" alt="Standard Room" />
+
+        <ul>
+          <li>Mid‑size double bed with bamboo headboard</li>
+          <li>Private bathroom with eco-friendly toiletries</li>
+          <li>
+            Wooden nightstand with woven abaca lamp for soft ambient light
+          </li>
+          <li>
+            Small window with bamboo blinds, letting in natural light and
+            greenery views
+          </li>
+        </ul>
+      </div>
+
+      <div class="room-two">
+        <h2 id="deluxe">Deluxe Room</h2>
+        <p>
+          The Deluxe Room Hut offers more space and comfort, blending earthy
+          tones with handcrafted details. It’s ideal for couples or small
+          families who want a relaxing tropical retreat with extra room to
+          unwind.
+        </p>
+        <img src="pics/deluxe.png" alt="Deluxe Room" />
+
+        <ul>
+          <li>
+            Queen‑sized wooden bed with accent pillows in warm earthy colors
+          </li>
+          <li>Spacious layout with polished wooden floors</li>
+          <li>
+            Large window or glass door with light curtains, opening to greenery
+            outside
+          </li>
+          <li>Complimentary Wi-Fi and cable TV</li>
+        </ul>
+      </div>
+
+      <div class="room-three">
+        <h2 id="premium">Premium Room</h2>
+        <p>
+          The Premium Room Hut is the most luxurious option, combining
+          traditional Filipino design with modern resort touches. It’s perfect
+          for guests seeking a serene, high‑end tropical experience with
+          breathtaking ocean views.
+        </p>
+        <img src="pics/premium.png" alt="Premium Room" />
+
+        <ul>
+          <li>King-size bed with premium bedding</li>
+          <li>Private bathroom with spa-like amenities</li>
+          <li>Four‑poster canopy bed draped in sheer white curtains</li>
+          <li>Balcony with ocean view, palm trees, and natural scenery</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="booking">
+      <h2>Book Your Stay</h2>
+      <form class="booking-form">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="room">Room Type:</label>
+          <select id="room" name="room" required>
+            <option selected>Select a room type</option>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="premium">Premium Room</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="checkin">Check-in Date:</label>
+          <input type="date" id="checkin" name="checkin" required />
+        </div>
+        <div>
+          <label for="checkout">Check-out Date:</label>
+          <input type="date" id="checkout" name="checkout" required />
+        </div>
+        <div>
+          <label for="guests">Number of Guests:</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="10"
+            required
+          />
+        </div>
+        <button id="book-button1" type="submit">BOOK A ROOM</button>
+      </form>
+    </section>
+
+    <footer>
+      <nav>
+        <a class="footer-link" href="contact.html">Contact Us</a>
+        <a class="footer-link" href="rooms.html#book-button1">Book Now</a>
+        <a class="footer-link" href="about.html">About Us</a>
+      </nav>
+      <p>&copy; 2026 Filipino Hometel. All rights reserved.</p>
+      <p>Designed by <em>Dememar Solomon</em> and <em>Cahren Sagrit</em>.</p>
+      <div class="watermark">
+        <img src="pics/logo.png" alt="Kubo Watermark" />
+      </div>
+    </footer>
+    <script src="js/index.js" defer></script>
+  </body>
+</html>

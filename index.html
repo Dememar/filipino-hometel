@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filipino Hometel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <a href="index.html" class="logo">
+        <img src="pics/logo.png" alt="Company Logo" />
+        <h1>Filipino Hometel</h1>
+      </a>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Logout</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Warmth of Home, Filipino Heart</h2>
+        <p>Experience comfort and culture at our hometel.</p>
+        <button class="btn" onclick="location.href = '#booking'">
+          BOOK NOW
+        </button>
+      </div>
+    </section>
+
+    <div class="grid-container">
+      <section style="grid-area: welcome" class="welcome">
+        <h2>Welcome to Filipino Hometel</h2>
+        <p>
+          At Filipino Hometel, we offer a unique blend of comfort and culture.
+          Our hometel provides a warm and inviting atmosphere, perfect for
+          travelers seeking an authentic Filipino experience. Whether you're
+          here for a short stay or an extended visit, our cozy accommodations
+          and friendly service will make you feel right at home.
+        </p>
+        <div class="carousel">
+          <div class="slide">
+            <img src="pics/exterior.png" alt="Nipa Hut Exterior" />
+            <div class="caption">Traditional Nipa Hut Comfort</div>
+          </div>
+          <div class="slide">
+            <img src="pics/interior.png" alt="Nipa Hut Interior" />
+            <div class="caption">Cozy Nipa Hut Interior</div>
+          </div>
+          <div class="slide">
+            <img src="pics/food.png" alt="Filipino Foods" />
+            <div class="caption">Taste of the Philippines</div>
+          </div>
+          <div class="slide">
+            <img src="pics/beach.png" alt="Filipino Hometel Scenery" />
+            <div class="caption">Tropical Paradise</div>
+          </div>
+
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </section>
+
+      <!-- Accommodations Section -->
+      <section style="grid-area: accomodations" id="accommodations">
+        <h2>Our Accommodations</h2>
+        <div class="carousel">
+          <div class="carousel-track">
+            <article class="carousel-item">
+              <img src="pics/standard.png" alt="Standard Room Hut" />
+              <h3>Standard Room</h3>
+              <button onclick="window.location.href = 'rooms.html#standard'">
+                View Room
+              </button>
+              <div class="features">
+                <ul>
+                  <li>
+                    <i
+                      class="fa-solid fa-wifi"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-tv"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-bath"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-bed"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="price"><h3>PHP 800/day</h3></div>
+            </article>
+
+            <article class="carousel-item">
+              <img src="pics/deluxe.png" alt="Deluxe Hut" />
+              <h3>Deluxe Room</h3>
+              <button onclick="window.location.href = 'rooms.html#deluxe'">
+                View Room
+              </button>
+              <div class="features">
+                <ul>
+                  <li>
+                    <i
+                      class="fa-solid fa-wifi"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-tv"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-bath"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-bed"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="price"><h3>PHP 1,500/day</h3></div>
+            </article>
+
+            <article class="carousel-item">
+              <img src="pics/premium.png" alt="Premium Hut" />
+              <h3>Premium Room</h3>
+              <button onclick="window.location.href = 'rooms.html#premium'">
+                View Room
+              </button>
+              <div class="features">
+                <ul>
+                  <li>
+                    <i
+                      class="fa-solid fa-wifi"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-tv"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-bath"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-bed"
+                      style="color: rgb(146, 109, 28)"
+                    ></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="price"><h3>PHP 2,500/day</h3></div>
+            </article>
+          </div>
+          <button class="carousel-prev">❮</button>
+          <button class="carousel-next">❯</button>
+        </div>
+      </section>
+
+      <section style="grid-area: booking" id="booking">
+        <h2>Book Your Stay</h2>
+        <form class="booking-form">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="room">Room Type:</label>
+            <select id="room" name="room" required>
+              <option selected>Select a room type</option>
+              <option value="standard">Standard Room</option>
+              <option value="deluxe">Deluxe Room</option>
+              <option value="premium">Premium Room</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required />
+          </div>
+          <div>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required />
+          </div>
+          <div>
+            <label for="guests">Number of Guests:</label>
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              min="1"
+              max="10"
+              required
+            />
+          </div>
+          <button id="book-button" type="submit">BOOK A ROOM</button>
+        </form>
+      </section>
+
+      <!-- Guest Reviews Section -->
+      <section style="grid-area: reviews" id="reviews">
+        <h2>What Our Guests Say</h2>
+        <div class="testimonials">
+          <blockquote>
+            <img
+              src="pics/cardo.jpg"
+              alt="Cardo Dalisay"
+              class="testimonial-img"
+            />
+            <h3>Cardo Dalisay</h3>
+            <p>Philippines</p>
+            <div class="ratings">
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+            </div>
+            <p class="text-caption">
+              "Ang sarap ng pagkain dito, super yummy! at ang mga staff ay
+              sobrang friendly at accommodating."
+            </p>
+          </blockquote>
+
+          <blockquote>
+            <img src="pics/onanay.jpg" alt="Onanay" class="testimonial-img" />
+            <h3>Onanay</h3>
+            <p>Philippines</p>
+            <div class="ratings">
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+            </div>
+            <p class="text-caption">
+              "Nakakarelax dito at yung experience ko dito with my kids ay hindi
+              ko makakalimutan."
+            </p>
+          </blockquote>
+
+          <blockquote>
+            <img
+              src="pics/addams.jpg"
+              alt="Wednesday Addams"
+              class="testimonial-img"
+            />
+            <h3>Wednesday Addams</h3>
+            <p>Philippines</p>
+
+            <div class="ratings">
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+            </div>
+            <p class="text-caption">
+              "This place is a hidden gem! The cozy huts and delicious food made
+              my stay unforgettable."
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Location & Contact Section -->
+      <section style="grid-area: contact" id="contact">
+        <h2>Location & Contact</h2>
+        <p>
+          We are located at 123 Kubo Street, Barangay Bahay, Legazpi City, Albay
+          Philippines
+        </p>
+        <div class="map">
+          <iframe
+            src="https://maps.google.com/?q=Philippines&output=embed"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="contact-info">
+          <p>Phone: +63 912 345 6789</p>
+          <p>Email: filipinohometel@gmail.com</p>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <a class="footer-link" href="contact.html">Contact Us</a>
+        <a class="footer-link" href="rooms.html#book-button1">Book Now</a>
+        <a class="footer-link" href="about.html">About Us</a>
+      </nav>
+      <p>&copy; 2026 Filipino Hometel. All rights reserved.</p>
+      <p>Designed by <em>Dememar Solomon</em> and <em>Cahren Sagrit</em>.</p>
+      <div class="watermark">
+        <img src="pics/logo.png" alt="Kubo Watermark" />
+      </div>
+    </footer>
+
+    <script src="js/index.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+  </body>
+</html>

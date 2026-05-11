@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Filipino Hometel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        /* Background image of a Filipino-style luxury resort/hotel */
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login-wrapper {
+        display: flex;
+        width: 900px;
+        height: 550px;
+        background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px); /* Modern glass effect */
+      }
+
+      .login-left {
+        width: 45%;
+        /* Warm wood/Narra tone gradient */
+        background:
+          linear-gradient(
+            135deg,
+            rgba(101, 67, 33, 0.9),
+            rgba(60, 40, 20, 0.9)
+          ),
+          url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+        color: #f4e4bc; /* Warm cream text */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px;
+        border-right: 5px solid #b8860b; /* Gold accent border */
+      }
+
+      .login-left h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 38px;
+        margin-bottom: 15px;
+        line-height: 1.2;
+      }
+
+      .login-left p {
+        font-size: 15px;
+        line-height: 1.6;
+        opacity: 0.8;
+        font-weight: 300;
+      }
+
+      .login-right {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;
+        background: #fffcf5; /* Off-white/Eggshell paper feel */
+      }
+
+      .login-right h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+        margin-bottom: 30px;
+        color: #3e2723; /* Deep coffee brown */
+        text-align: center;
+      }
+
+      .input-group {
+        margin-bottom: 20px;
+      }
+
+      .input-group label {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #795548;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        border: 1px solid #d7ccc8;
+        border-radius: 4px;
+        outline: none;
+        transition: 0.3s;
+        background: #ffffff;
+      }
+
+      .input-group input:focus {
+        border-color: #b8860b;
+        box-shadow: 0 0 8px rgba(184, 134, 11, 0.2);
+      }
+
+      .login-btn {
+        margin-top: 15px;
+        padding: 14px;
+        background: #1b5e20;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: 0.4s;
+      }
+
+      .login-btn:hover {
+        background: #b8860b;
+        transform: translateY(-2px);
+      }
+
+      .extra {
+        margin-top: 25px;
+        font-size: 13px;
+        text-align: center;
+        color: #5d4037;
+      }
+
+      .extra a {
+        color: #b8860b;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .extra a:hover {
+        text-decoration: underline;
+      }
+
+      .error {
+        color: #d32f2f;
+        font-size: 13px;
+        margin-top: 15px;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+      .logo h2 {
+        font-family: "Lato", sans-serif;
+        color: #a16b1a;
+        font-size: 2.1rem;
+        width: 40%;
+        text-align: start;
+        margin-left: 0.5rem;
+        padding-top: 2rem;
+      }
+      .logo img {
+        width: 100px;
+        height: 100px;
+        border-radius: 80px;
+      }
+
+      @media (max-width: 800px) {
+        .login-wrapper {
+          flex-direction: column;
+          width: 90%;
+          height: auto;
+        }
+        .login-left,
+        .login-right {
+          width: 100%;
+          padding: 30px;
+        }
+        .login-left {
+          border-right: none;
+          border-bottom: 5px solid #b8860b;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <div class="login-left">
+        <h1>Mabuhay</h1>
+        <p>
+          Experience the warmth of Filipino hospitality. Please log in to manage
+          your resort operations.
+        </p>
+      </div>
+
+      <div class="login-right">
+        <div class="logo">
+          <img src="pics/logo.png" alt="Company Logo" />
+          <h2>Filipino Hometel</h2>
+        </div>
+
+        <div class="input-group">
+          <label>Username</label>
+          <input type="text" id="username" placeholder="Enter your Username" />
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" id="password" placeholder="••••••••" />
+        </div>
+
+        <button class="login-btn" onclick="login()">LOGIN</button>
+
+        <div class="error" id="error"></div>
+      </div>
+    </div>
+
+    <script>
+      function login() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "admin" && password === "12345") {
+          alert("Login successful! Welcome back.");
+          window.location.href = "index.html";
+        } else {
+          document.getElementById("error").innerText =
+            "Invalid credentials. Please try again.";
+        }
+      }
+    </script>
+  </body>
+</html>

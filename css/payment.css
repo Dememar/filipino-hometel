@@ -1,0 +1,89 @@
+.payment-mode {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  margin: auto;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.098);
+}
+.payment-mode #status-symbol {
+  display: block;
+  font-size: 4rem;
+  color: rgb(218, 218, 19);
+  background-color: white;
+  padding: 1rem;
+  width: auto;
+  border-radius: 50%;
+  border: 2px solid rgb(218, 218, 19);
+  box-shadow: 1px 5px 12px rgb(218, 218, 19);
+}
+.payment-mode #status-symbol2 {
+  display: none;
+  font-size: 4rem;
+  color: rgb(5, 230, 39);
+  background-color: white;
+  padding: 1rem;
+  width: auto;
+  border-radius: 50%;
+  border: 2px solid rgb(5, 230, 39);
+  box-shadow: 1px 5px 12px rgb(5, 230, 39);
+}
+.payment-mode #status {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.payment-mode .details {
+  width: 100%;
+  margin-left: 2rem;
+  line-height: 1.7rem;
+  font-size: 1.1rem;
+}
+.payment-mode select {
+  flex: 1;
+  padding: 0.2rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.payment-mode select:focus {
+  outline: none;
+  border-color: #7c5621;
+  box-shadow: 0 0 5px rgba(124, 86, 33, 0.5);
+}
+.payment-mode button {
+  padding: 1rem;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #7c5621;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1.1rem;
+}
+#creditCardField,
+#paypalField,
+#gcashField {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#creditCardField input,
+#paypalField input,
+#gcashField input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 1rem;
+}
+
+#creditCardField input:focus,
+#paypalField input:focus,
+#gcashField input:focus {
+  outline: none;
+  border-color: #7c5621;
+  box-shadow: 0 0 5px rgba(124, 86, 33, 0.5);
+}
